@@ -3,11 +3,11 @@ import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 // import FriendListItem from './components/FriendList/FriendListItem';
-// import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import user from './jsonsdata/user.json';
 import statisticalData from './jsonsdata/statistical-data.json';
 import friends from './jsonsdata/friends.json';
-// import transactions from './jsonsdata/transactions.json';
+import transactions from './jsonsdata/transactions.json';
 
 const App = () => (
   <>
@@ -23,7 +23,7 @@ const App = () => (
     <Statistics title="Upload stats" stats={statisticalData} />
     <FriendList friends={friends} />
     {/* <FriendListItem userData={friends} /> */}
-    {/* <TransactionHistory items={transactions} /> */}
+    <TransactionHistory items={transactions} />
   </>
 );
 

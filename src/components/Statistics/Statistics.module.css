@@ -1,14 +1,13 @@
 /* Use variables if needs */
-/* @value font-stack from '../vars.module.css'; */
-/* @value main-color from '../vars.module.css'; */
+/* @value main-color from '../../vars.module.css'; */
 
 .statistics {
   margin: 0 auto;
   width: 250px;
-  /* font-family: font-stack; */
   /* border: 1px solid main-color; */
   border: 1px solid lightgray;
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0px 0px 5px 1px #768696;
   text-align: center;
 }
 

@@ -1,0 +1,44 @@
+@value font-stack from '../../vars.module.css';
+
+.transactionHistory {
+  width: 875px;
+  text-align: center;
+  margin: 0 auto 20px;
+  border: 1px solid #768696;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px #768696;
+}
+
+.tableHead {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #00bcd4;
+  font-family: font-stack;
+  /* font-weight: 700; */
+  /* font-size: 16px; */
+}
+
+th {
+  width: 33.33%;
+  padding: 20px 0 20px;
+  box-shadow: 0 0 0 1px #e4e9f0;
+}
+
+.itemRow td {
+  font-size: 15px;
+  font-weight: 300;
+  color: #5c6985;
+  padding: 20px 0 20px;
+}
+
+.itemRow:nth-child(even) {
+  background: #ecf3f9;
+}
+
+td:first-letter {
+  text-transform: uppercase;
+}
+
+td {
+  box-shadow: 0 0 0 1px #e4e9f0;
+}
