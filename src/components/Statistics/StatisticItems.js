@@ -19,7 +19,7 @@ const StatisticItems = ({ id, label, percentage }) => (
 );
 
 StatisticItems.propTypes = {
-  id: PropTypes.string.isRequired,
+  // id: PropTypes.string.isRequired, //if use it we have a mistake in a web console(use another way to fix it(look Statistics))
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

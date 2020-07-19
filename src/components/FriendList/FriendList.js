@@ -18,7 +18,14 @@ const FriendList = ({ friends }) => (
 );
 
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      // avatar: PropTypes.string.isRequired, //don't use it(if you want), cause we wrote this propType in FriendListItem
+      // name: PropTypes.string.isRequired, //don't use it(if you want), cause we wrote this propType in FriendListItem
+      // isOnline: PropTypes.bool.isRequired, //don't use it(if you want), cause we wrote this propType in FriendListItem
+    }),
+  ).isRequired,
 };
 
 export default FriendList;

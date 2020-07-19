@@ -32,7 +32,7 @@ FriendListItem.defaultProps = {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  // id: PropTypes.number.isRequired, //if use it we have a mistake in a web console(use another way to fix it(look FriendList))
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,

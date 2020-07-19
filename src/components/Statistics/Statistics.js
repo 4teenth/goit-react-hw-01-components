@@ -19,20 +19,20 @@ Statistics.defaultProps = {
   title: '',
 };
 
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }),
-//   ).isRequired,
-// };
-
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      // label: PropTypes.string.isRequired, //don't use it(if you want), cause we wrote this propType in StatisticItems
+      // percentage: PropTypes.number.isRequired, //don't use it(if you want), cause we wrote this propType in StatisticItems
+    }),
+  ).isRequired,
 };
+
+// Statistics.propTypes = {
+//   title: PropTypes.string,
+//   stats: PropTypes.array.isRequired,
+// };
 
 export default Statistics;
